@@ -1,0 +1,76 @@
+/* ---------------------------------- flex styles ---------------------------------- */
+%flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%flex-start {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ----------------------------- Buttons styles ----------------------------- */
+
+// %btn-active {
+//   background-color: $color-primary;
+//   border-radius: 15px;
+//   padding: 0.5rem 3rem;
+//   color: #fff;
+//   margin: 0.3rem;
+// }
+// %btn-waiting {
+//   background-color: transparent;
+//   border-radius: 15px;
+//   border: 2px solid $text-secondary;
+//   padding: 0.5rem 3rem;
+//   color: #fff;
+//   margin: 0.3rem;
+// }
+// /* ---------------------------- Paragraphs styles --------------------------- */
+// %paragraph-L {
+//   color: $text-secondary;
+//   font-size: 1.125rem;
+//   font-weight: 400;
+//   line-height: 1.688rem;
+// }
+// %paragraph-S {
+//   color: $text-secondary;
+//   font-size: 1rem;
+//   font-weight: 400;
+//   line-height: 1.4em;
+// }
+// /* ----------------------------- Headings styles ---------------------------- */
+// %h2-main {
+//   color: $text-main;
+//   font-size: 2.5rem;
+//   font-weight: 700;
+//   line-height: 2.93rem;
+// }
+// %h4-main {
+//   color: $text-main;
+//   font-size: 1rem;
+//   font-weight: 700;
+//   line-height: 1.172rem;
+// }
+// /* ------------------------------ Icons styles ------------------------------ */
+// %icons {
+//   font-size: 2.7rem;
+//   color: $color-primary;
+// }
+
+// /* ------------------------------ Images styles ----------------------------- */
+// %img-hover {
+//   cursor: pointer;
+//   transition: all 1s;
+//   transform: scale(1.02);
+// }

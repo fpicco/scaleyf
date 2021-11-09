@@ -1,62 +1,191 @@
+/* Media queries */
+/* --------------------------------- Example -------------------------------- */
+/* ---------------------------------- flex styles ---------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+header, main .heroe, footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .contactUs .form-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ----------------------------- Buttons styles ----------------------------- */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-html {
+
+body {
   font-family: "Roboto", sans-serif;
-  font-size: 10px;
 }
-header {
-  margin: 2rem;
-  font-size: 2rem;
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-form {
-  font-size: 1.8rem;
-  margin: auto;
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-form div {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-}
-form input[type="text"],form input[type="email"] {
-  border: 1px solid grey;
-  border-radius: 10px;
-  line-height: 2rem;
-  padding: 5px;
-}
-form input[type="text"]:focus {
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 0 0 2pt #1c0f67;
-  outline: none;
-  transition: 0.2s;
-}
-form input[type="submit"] {
-  align-self: center;
-  background-color: grey;
-  border: 1px solid grey;
-  border-radius: 10px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 1.8rem;
-  margin-top: 20px;
+
+ul li a {
   padding: 10px;
-  transition: 0.5s;
-  width: 40%;
+  width: 40px;
 }
-form input[type="submit"]:hover {
-  background-color: #1c0f67;
-  color: #fff;
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
 }
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-color: #ffffff;
+  height: 4rem;
+  position: fixed;
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  -o-border-image: linear-gradient(45deg, #28427A, #419669) 1;
+     border-image: linear-gradient(45deg, #28427A, #419669) 1;
+}
+
+header .logo {
+  color: #28427A;
+}
+
+header nav,
+header ul {
+  color: #419669;
+}
+
+header nav li,
+header ul li {
+  margin: 0.7rem;
+}
+
+header nav li a:hover,
+header ul li a:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+header ul li a {
+  display: inline;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+main .heroe {
+  margin: 5rem auto;
+  padding: 3rem;
+}
+
+main .heroe div img {
+  border-radius: 20px;
+}
+
+main .heroe div p {
+  padding: 4rem;
+  font-size: 1.1rem;
+}
+
+main .contactUs {
+  background: -webkit-gradient(linear, left bottom, left top, from(#28427A), to(#419669));
+  background: linear-gradient(0deg, #28427A 0%, #419669 100%);
+  padding: 4rem;
+}
+
+main .contactUs .form-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  width: 45%;
+  margin: auto;
+  padding: 4rem;
+  color: #FFFFFF;
+}
+
+main .contactUs .form-container h2 {
+  letter-spacing: 4px;
+  padding: 1.5rem 0;
+  font-size: 2.2rem;
+}
+
+main .contactUs .form-container h4 {
+  font-size: 1.56s;
+  text-align: center;
+}
+
+main .contactUs .form-container div {
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+main .contactUs .form-container div label {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  padding: 0.3rem 0;
+  font-size: 0.87rem;
+}
+
+main .contactUs .form-container div input {
+  width: 100%;
+  border: 1px solid #CACACA;
+  -webkit-box-shadow: 1px 1px 5px gray;
+          box-shadow: 1px 1px 5px gray;
+  border-radius: 4px;
+  height: 2rem;
+}
+
+main .contactUs .form-container #submit {
+  background: -webkit-gradient(linear, left top, right top, from(#28427A), color-stop(50%, #419669), to(#28427A));
+  background: linear-gradient(90deg, #28427A 0%, #419669 50%, #28427A 100%);
+  border: 1px solid #CACACA;
+  color: #FFFFFF;
+  border-radius: 15px;
+  height: 2rem;
+  width: 93%;
+  margin: 2rem 1rem;
+}
+
+main .contactUs-top {
+  height: 170px;
+  background: url("../img/bg-top-line.png") no-repeat;
+}
+
+main .contactUs-bottom {
+  margin: -2px;
+  height: 170px;
+  background: url("../img/bg-bottom-line.png") no-repeat;
+}
+/*# sourceMappingURL=styles.css.map */

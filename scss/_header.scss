@@ -1,0 +1,35 @@
+header {
+  @extend %flex-around;
+  background-color: #ffffff;
+  height: 4rem;
+  position: fixed;
+  width: 100%;
+  .logo {
+    color: $bg-primary1;
+  }
+  nav,
+  ul {
+    color: $bg-primary2;
+    li {
+      margin: 0.7rem;
+      a {
+        &:hover {
+          color: $color-primary;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  ul {
+    li {
+      a {
+        // @extend %btn-waiting;
+        display: inline;
+      }
+    }
+  }
+
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-image: linear-gradient(45deg, $bg-primary1, $bg-primary2) 1;
+}

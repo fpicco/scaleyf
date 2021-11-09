@@ -7,33 +7,58 @@
     <title>SCALEYF</title>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/styles2.css"> -->
 </head>
 
 <body>
     <header>
-        <h1>SCALEYF</h1>
-        <h2>Scale your finances</h2>
+        <h1 class="logo">SCALEYF</h1>
+        <!-- <h2>Scale your finances</h2> -->
+        <nav>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>Create profile</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <form action="#" method="POST">
+        <div class="heroe">
+            <div><img src="https://via.placeholder.com/2000x1300.png" alt=""></div>
             <div>
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email" required>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus dolore deserunt reprehenderit
+                    itaque qui odit eum architecto saepe expedita hic at laborum, sunt corporis consequatur praesentium
+                    blanditiis aliquid fuga similique possimus aut? Obcaecati adipisci aut assumenda ipsum, quibusdam
+                    omnis quisquam.</p>
             </div>
-            <div>
-                <label for="apikey">API KEY</label>
-                <input type="text" id="apikey" name="apikey" required>
+        </div>
+        <div class="contactUs-top"></div>
+        <div class="contactUs">
+            <div class="form-container">
+                <h2>Create your profile</h2>
+                <h4>Get started absolutely free</h4>
+                <form action="#" method="POST">
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="apikey">API KEY</label>
+                        <input type="text" id="apikey" name="apikey" required>
+                    </div>
+                    <div>
+                        <label for="apisecret">API SECRET</label>
+                        <input type="text" id="apisecret" name="apisecret" required>
+                    </div>
+                    <div>
+                        <label for="tgmId">TELEGRAM CHAT ID</label>
+                        <input type="text" id="tgmId" name="tgmId" required>
+                    </div>
+                    <input id="submit" type="submit" value="Submit">
+                </form>
             </div>
-            <div>
-                <label for="apisecret">API SECRET</label>
-                <input type="text" id="apisecret" name="apisecret" required>
-            </div>
-            <div>
-                <label for="tgmId">TELEGRAM CHAT ID</label>
-                <input type="text" id="tgmId" name="tgmId" required>
-            </div>
-            <input type="submit" value="Submit">
-        </form>
+        </div>
+        <div class="contactUs-bottom"></div>
     </main>
     <footer></footer>
     <script src="scripts/form.js" defer></script>
