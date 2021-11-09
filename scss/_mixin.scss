@@ -4,3 +4,16 @@
 //     font-weight: $weight;
 //     color:$color;
 // }
+
+@mixin text($font-size, $letter-spacing, $margin, $padding, $text-align) {
+    font-size: $font-size;
+    padding: $padding;
+    letter-spacing: $letter-spacing;
+    margin: $margin;
+    text-align: $text-align;
+}
+
+@mixin height-width($height, $width) {
+    height: $height;
+    width: $width;
+}
