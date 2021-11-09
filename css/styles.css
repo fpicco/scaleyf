@@ -135,6 +135,7 @@ main .contactUs .form-container h2 {
   letter-spacing: 4px;
   padding: 1.5rem 0;
   font-size: 2.2rem;
+  text-align: center;
 }
 
 main .contactUs .form-container h4 {
