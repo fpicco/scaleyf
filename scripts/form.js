@@ -9,7 +9,7 @@ window.addEventListener("load", function () {
   });
 });
 
-function fetchApiProfile(url) {
+async function fetchApiProfile(url) {
   const settings = {
     method: "POST",
     headers: {
@@ -17,31 +17,31 @@ function fetchApiProfile(url) {
     },
     body: JSON.stringify(getPayload()),
   };
-  fetch(url, settings)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("FAILED");
-      }
-      return response.json();
-    })
-    .then((data) => {
-      console.log(`Success: ${data}`);
-      Swal.fire({
-        icon: "success",
-        title: `Woohoo! You're done\n`,
-        showConfirmButton: false,
-        timer: 1500,
-      });
-    })
-    .catch(() => {
-      Swal.fire({
-        icon: "error",
-        title: `Oops! Something went wrong\n`,
-        showConfirmButton: false,
-        timer: 1500,
-      });
+
+  try {
+    const response = await fetch(url, settings);
+    if (!response.ok) {
+      throw new Error("FAILED");
+    }
+    const data = await response.json();
+    console.log(`Success: ${data}`);
+    Swal.fire({
+      icon: "success",
+      title: `Woohoo! You're done\n`,
+      showConfirmButton: false,
+      timer: 1500,
     });
+    return data;
+  } catch {
+    Swal.fire({
+      icon: "error",
+      title: `Oops! Something went wrong\n`,
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  }
 }
+
 function getPayload() {
   const apiKey = document.querySelector("#apikey");
   const apiSecret = document.querySelector("#apisecret");

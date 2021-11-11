@@ -129,10 +129,10 @@ main #createProfile {
 main #createProfile .form-container {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
-  width: 45%;
+  color: #FFFFFF;
   margin: auto;
   padding: 4rem;
-  color: #FFFFFF;
+  width: 45%;
 }
 
 main #createProfile .form-container h2 {
@@ -185,8 +185,8 @@ main #createProfile .form-container #submit {
   height: 2rem;
   width: 93%;
   border: 1px solid #CACACA;
-  color: #FFFFFF;
   border-radius: 15px;
+  color: #FFFFFF;
   margin: 2rem 1rem;
 }
 

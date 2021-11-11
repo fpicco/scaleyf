@@ -4,10 +4,10 @@
   .form-container {
     background-color: rgba($color: #fff, $alpha: 0.3);
     border-radius: 10px;
-    width: 45%;
+    color: $color-primary;
     margin: auto;
     padding: 4rem;
-    color: $color-primary;
+    width: 45%;
     h2 {
       @include text(2.2rem, 4px, 0, 1.5rem 0, center);
     }
@@ -39,8 +39,8 @@
       );
       @include height-width(2rem, 93%);
       border: 1px solid $color-secondary;
-      color: $color-primary;
       border-radius: 15px;
+      color: $color-primary;
       margin: 2rem 1rem;
     }
   }
