@@ -28,6 +28,8 @@
         border: 1px solid $color-secondary;
         box-shadow: 1px 1px 5px gray;
         border-radius: 4px;
+        outline: none;
+        padding: 10px;
       }
     }
     #submit {
@@ -46,12 +48,12 @@
   }
 }
 #createProfile-top {
-  @include height-width(170px, 100%);
-
+  margin: -2px 0;
+  @include height-width(170px, auto);
   background: url("../img/bg-top-line.png") no-repeat;
 }
 #createProfile-bottom {
-  margin: -2px;
+  margin: -3px 0;
   @include height-width(170px, 100%);
   background: url("../img/bg-bottom-line.png") no-repeat;
 }

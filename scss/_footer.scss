@@ -1,3 +1,32 @@
 footer {
-  @extend %flex-around;
+  @extend %flex-between;
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-image: linear-gradient(45deg, $bg-primary1, $bg-primary2) 1;
+  margin-top: 2rem;
+  padding: 1rem;
+  div {
+    width: 50%;
+    p {
+      color: $bg-primary2;
+      text-align: right;
+      padding: 0.2rem 1rem;
+      a{
+        i{
+          padding: 0 0.3rem;
+          color: $bg-primary1;
+        }
+      }
+    }
+    ul {
+      li {
+        a {
+          width: 80%;
+          padding: 0 1rem;
+          margin: 1rem;
+          color: $bg-primary1;
+        }
+      }
+    }
+  }
 }

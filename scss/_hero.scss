@@ -1,0 +1,14 @@
+#hero {
+  @extend %flex-center;
+  margin: 4rem auto 0 ;
+  padding: 3rem 5rem;
+  margin-right: 0;
+  img {
+    border-radius: 20px;
+    width: 50%;
+  }
+  p {
+    padding: 4rem;
+    font-size: 1.1rem;
+  }
+}

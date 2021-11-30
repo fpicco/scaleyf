@@ -2,12 +2,24 @@
 /* --------------------------------- Example -------------------------------- */
 /* ---------------------------------- flex styles ---------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-header, main #heroe, footer {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -20,6 +32,18 @@ main #createProfile .form-container div {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -106,16 +130,18 @@ main {
   padding: 2rem 0;
 }
 
-main #heroe {
-  margin: 5rem auto;
-  padding: 3rem;
+main #hero {
+  margin: 4rem auto 0;
+  padding: 3rem 5rem;
+  margin-right: 0;
 }
 
-main #heroe div img {
+main #hero img {
   border-radius: 20px;
+  width: 50%;
 }
 
-main #heroe div p {
+main #hero p {
   padding: 4rem;
   font-size: 1.1rem;
 }
@@ -177,6 +203,8 @@ main #createProfile .form-container div input {
   -webkit-box-shadow: 1px 1px 5px gray;
           box-shadow: 1px 1px 5px gray;
   border-radius: 4px;
+  outline: none;
+  padding: 10px;
 }
 
 main #createProfile .form-container #submit {
@@ -191,15 +219,47 @@ main #createProfile .form-container #submit {
 }
 
 main #createProfile-top {
+  margin: -2px 0;
   height: 170px;
-  width: 100%;
+  width: auto;
   background: url("../img/bg-top-line.png") no-repeat;
 }
 
 main #createProfile-bottom {
-  margin: -2px;
+  margin: -3px 0;
   height: 170px;
   width: 100%;
   background: url("../img/bg-bottom-line.png") no-repeat;
+}
+
+footer {
+  border-top-style: solid;
+  border-top-width: 3px;
+  -o-border-image: linear-gradient(45deg, #28427A, #419669) 1;
+     border-image: linear-gradient(45deg, #28427A, #419669) 1;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+footer div {
+  width: 50%;
+}
+
+footer div p {
+  color: #419669;
+  text-align: right;
+  padding: 0.2rem 1rem;
+}
+
+footer div p a i {
+  padding: 0 0.3rem;
+  color: #28427A;
+}
+
+footer div ul li a {
+  width: 80%;
+  padding: 0 1rem;
+  margin: 1rem;
+  color: #28427A;
 }
 /*# sourceMappingURL=styles.css.map */
